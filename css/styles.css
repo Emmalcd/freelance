@@ -1,10 +1,10 @@
 :root {
   --blanco: #ffffff;
   --oscuro: #212121;
-  --primario: #ffc107;
-  --secundario: #0097a7;
-  --gris: #757575;
-  --grisClaro: #dfe9f3;
+  --primario: #f7db15;
+  --secundario: #2f2bad;
+  --gris: #7d7777;
+  --fondo: #db8bdb;
 }
 /* Globales */
 html {
@@ -28,7 +28,7 @@ body {
   font-family: "Krub", sans-serif;
   background-image: linear-gradient(
     to top,
-    var(--grisClaro) 0%,
+    var(--fondo) 0%,
     var(--blanco) 100%
   );
 }
@@ -131,8 +131,13 @@ h3 {
 }
 
 /* Hero */
+@media (min-width: 768px) {
+  .hero {
+    background-position: 0% 25%;
+  }
+}
 .hero {
-  background-image: url(../img/hero.jpg);
+  background-image: url(../img/hero.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
